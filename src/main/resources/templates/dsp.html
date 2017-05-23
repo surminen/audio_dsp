@@ -1,0 +1,19 @@
+<HTML>
+<HEADER> </HEADER>
+<BODY>
+
+	<H1>DSP</H1>
+
+	<form action="#" th:action="@{/dsp/action}" th:object="${dspInfo}"
+		method="post">
+		<p>
+			<input type="text" th:field="*{info}" />
+		</p>
+		<p>
+			<input type="submit" name="action" value="run" />
+			<input type="submit" name="action" value="stop" />
+		</p>
+	</form>
+
+</BODY>
+</HTML>
