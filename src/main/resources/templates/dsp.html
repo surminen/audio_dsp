@@ -10,8 +10,13 @@
 			<input type="text" th:field="*{info}" />
 		</p>
 		<p>
-			<input type="submit" name="action" value="run" />
-			<input type="submit" name="action" value="stop" />
+			<select th:field="*{mixerInfo}">
+				<option th:each="mixer : ${mixers}" th:value="${mixer.getName()}"
+					th:text="${mixer.getName()}">Wireframe</option>
+			</select>
+		</p>
+		<p>
+			<input type="submit" name="action" value="start" />
 		</p>
 	</form>
 

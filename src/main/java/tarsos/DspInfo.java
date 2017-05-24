@@ -12,7 +12,7 @@
  * not be provided or otherwise made available to any other person.
  */
 
-package com.example.dsp;
+package tarsos;
 
 /**
  * TODO
@@ -21,6 +21,7 @@ public class DspInfo
 {
     private String info;
     private String action;
+    private String mixerInfo;
 
     /**
      * @param action
@@ -54,5 +55,22 @@ public class DspInfo
     public String getAction()
     {
         return action;
+    }
+
+    /**
+     * @param audioInfo
+     *            the audioInfo to set
+     */
+    public void setMixerInfo(String audioInfo)
+    {
+        this.mixerInfo = audioInfo;
+    }
+
+    /**
+     * @return the audioInfo
+     */
+    public String getMixerInfo()
+    {
+        return mixerInfo;
     }
 }
